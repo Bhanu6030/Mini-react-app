@@ -133,3 +133,18 @@ table, th, td {
   color: white;
   border-radius: 20px;
 }
+.Display{
+  width: 100vw;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+img{
+  width: 300px;
+  margin: 10px;
+}
+.imageUpload{
+  margin-left: 30%;
+  margin-top: 5%;
+}
