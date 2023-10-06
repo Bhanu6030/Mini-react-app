@@ -6,6 +6,7 @@ const Shop = () => {
   const { fillInfo } = useContext(FillInfoContext);
 
   return (
+    
     <div>
       <p className="heading">User Information :</p>
       <div className="individual">

@@ -97,3 +97,39 @@ label{
   margin-left: 40%;
   margin-top: 50px;
 }
+/* table {
+  border: 1px solid black;
+  width: 50%;
+  margin-left: 30%;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  /* padding: 8px; */
+  /* padding: 10px; */
+/* }  */
+table, th, td {
+  margin-left: 30%;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.search{
+  margin-top: 10%;
+  margin-left: 30%;
+  margin-bottom: 20px;
+}
+.spacebar{
+  padding: 7px 50px 7px 14px;
+  margin-right: 30px;
+  border-radius: 20px;
+  color:black
+}
+.search-button{
+  padding: 10px 20px 10px 20px;
+  background-color: blue;
+  color: white;
+  border-radius: 20px;
+}

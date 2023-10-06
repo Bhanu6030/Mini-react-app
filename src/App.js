@@ -1,12 +1,12 @@
 
- import "./App.css";
-
+import "./App.css";
+import Search from "./Search";
 import React, { useContext, useState } from 'react';
 import { FillInfoContext } from './Components/Context';
-import Shop from './Components/Shop'
+import Shop from './Components/Shop';
+import Display from "./Components/Display";
 const App = () => {
   const { fillInfo, setFillInfo } = useContext(FillInfoContext);
-
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [suggestions, setSuggestions] = useState('');
@@ -36,12 +36,12 @@ const App = () => {
       <form className="totalform" onSubmit={handleSubmit}>
         <label>
         Name:
-          <input className="labeltext1" type="text" value={name} onChange={(e) => setName(e.target.value)} />
+          <input className="labeltext1" placeholder="enter your name.." type="text" value={name} onChange={(e) => setName(e.target.value)} />
         </label>
         <br />
         <label>
           Email:
-          <input className="labeltext2" type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+          <input placeholder="enter your email.." className="labeltext2" type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
         </label>
         <br />
         <label>
@@ -49,11 +49,13 @@ const App = () => {
           
         </label><br>
         </br>
-        <textarea className="labeltext3" rows={10} cols={50} value={suggestions} onChange={(e) => setSuggestions(e.target.value)} />
+        <textarea placeholder="enter your suggestions.." className="labeltext3" rows={10} cols={50} value={suggestions} onChange={(e) => setSuggestions(e.target.value)} />
         <br />
         <button className="submitbutton" type="submit">Submit</button>
       </form>
       <Shop />
+      <Search />
+      <Display />
       </div>
   );
 };
